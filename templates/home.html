@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+    <title>Stock Projections!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+      <!-- stock ticker -->
+        <div id="Stocks">
+            <span class="Symbol">
+                <b class="Stat"><i data-replace='Symbol'>AMZN</i>:<i data-replace='StockExchange'>NYSE</i></b>
+                <b class="Label">( <i data-replace='Name'>Amazon</i> )</b>
+            </span>
+            <span class="Price"><b class="Label">Last Price</b> <b class="Stat">$<i data-replace='BidRealtime'></i></b></span>
+            <span class="Change"><b class="Label">Change</b> <b class="Stat"><i data-replace='Change'></i></b> <b class="Stat">(<i data-replace='ChangeinPercent'></i>)</b></span>
+            <span class="Volume"><b class="Label">Volume</b> <b class="Stat" data-replace='Volume'></b></span>
+            <span class="MarketCapitalization"><b class="Label">Mkt Cap</b> <b class="Stat">$<i data-replace="MarketCapitalization"></i></b></span>
+            <span class="LastUpdated"><b class="Label">Last Trade</b> <b class="Stat"><i data-replace='LastTradeDate'></i> <i data-replace="LastTradeTime"></i> </b></span>
+                    
+                        
+            <span class="Symbol">
+                <b class="Stat"><i data-replace='Symbol'>GME</i>:<i data-replace='StockExchange'>NYSE</i></b>
+                <b class="Label">( <i data-replace='Name'>GameStop</i> )</b>
+            </span>
+            <span class="Price"><b class="Label">Last Price</b> <b class="Stat">$<i data-replace='BidRealtime'></i></b></span>
+            <span class="Change"><b class="Label">Change</b> <b class="Stat"><i data-replace='Change'></i></b> <b class="Stat">(<i data-replace='ChangeinPercent'></i>)</b></span>
+            <span class="Volume"><b class="Label">Volume</b> <b class="Stat" data-replace='Volume'></b></span>
+            <span class="MarketCapitalization"><b class="Label">Mkt Cap</b> <b class="Stat">$<i data-replace="MarketCapitalization"></i></b></span>
+            <span class="LastUpdated"><b class="Label">Last Trade</b> <b class="Stat"><i data-replace='LastTradeDate'></i> <i data-replace="LastTradeTime"></i> </b></span>
+            <span class="Symbol">
+                <b class="Stat"><i data-replace='Symbol'>TSLA</i>:<i data-replace='StockExchange'>NYSE</i></b>
+                <b class="Label">( <i data-replace='Name'>Tesla</i> )</b>
+            </span>
+            <span class="Price"><b class="Label">Last Price</b> <b class="Stat">$<i data-replace='BidRealtime'></i></b></span>
+            <span class="Change"><b class="Label">Change</b> <b class="Stat"><i data-replace='Change'></i></b> <b class="Stat">(<i data-replace='ChangeinPercent'></i>)</b></span>
+            <span class="Volume"><b class="Label">Volume</b> <b class="Stat" data-replace='Volume'></b></span>
+            <span class="MarketCapitalization"><b class="Label">Mkt Cap</b> <b class="Stat">$<i data-replace="MarketCapitalization"></i></b></span>
+            <span class="LastUpdated"><b class="Label">Last Trade</b> <b class="Stat"><i data-replace='LastTradeDate'></i> <i data-replace="LastTradeTime"></i> </b></span>
+        </div>
+</head>
+
+<body>
+    <a href="index.html" class="button">Home</a>
+    <div class="dropdown">
+        <button class="dropbtn">Stocks</button>
+        <div class="dropdown-content">
+          <a href="Amazon.html">Amazon</a>
+          <a href="Tesla.html">Tesla</a>
+          <a href="GameStop.html">GameStop</a>
+        </div>
+    </div>
+    <a href="Creators.html" class="button">Developers</a>
+    <div id="maintext" style="position:absolute; margin:auto; width:700px; height:200px; text-align:center; top:0; bottom: 0; left: 0; right: 0;">  
+      <img src="stockimage.jpeg" alt="Generic Stock Image" width="600" height="200">
+      <h1 class="text-light mb-2"> Select your stock from below and see how much money you can make! </h1>
+      <h4 class="text-light mb-5">How bright will your future be?</h4>
+      <form method=post enctype=multipart/form-data>
+         <p class="text-light">
+             <!-- buttons to click that are the different stock names -->
+             <button class="tablinks" onclick="openCity(event, 'Amazon')">Amazon</button>
+             <button class="tablinks" onclick="openCity(event, 'Tesla')">Tesla</button>
+             <button class="tablinks" onclick="openCity(event, 'GameStop')">GameStop</button>
+         </p>
+      </form>
+    </div>
+    
+    <footer>
+        <div id="footer" class = "footer container" >
+            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+            <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+            <a href="https://www.facebook.com/HBR/" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/charliebilello" class="fa fa-twitter"></a>
+            <a href="https://www.youtube.com/channel/UCczMw5XzxxVks7sNaC-QxwQ/videos" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="https://www.reddit.com/r/stocks/" class="fa fa-reddit"></a>
+        </div>
+    </footer>
+</body>
+
+</html>
