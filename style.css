@@ -232,3 +232,8 @@ tr:nth-child(even) {
   background-color: #dddddd;
 }
 
+.graph{
+  position: relative;
+  
+}
+
